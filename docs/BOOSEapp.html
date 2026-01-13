@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace BOOSEapp | BOOSEapp-Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace BOOSEapp | BOOSEapp-Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSEapp-Documentation">
+            BOOSEapp-Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BOOSEapp">
+
+  <h1 id="BOOSEapp" data-uid="BOOSEapp" class="text-break">Namespace BOOSEapp</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.CanvasApp.html">CanvasApp</a></dt>
+      <dd><p>Default <span class="xref">BOOSE.ICanvas</span> implementation backed by a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a>.
+Provides simple drawing primitives (move, line, rectangle, circle, triangle, text) using the current pen/brush.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.CircleApp.html">CircleApp</a></dt>
+      <dd><p>Handles the &quot;circle&quot; command to draw an unfilled circle at the current canvas position.
+Supports literal values, variables, and expressions for the radius parameter.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.CommandFactoryApp.html">CommandFactoryApp</a></dt>
+      <dd><p>Application-specific command factory that constructs concrete drawing commands.
+Implements the Singleton pattern to ensure only one factory instance exists.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.ElseApp.html">ElseApp</a></dt>
+      <dd><p>Handles the &quot;else&quot; command in if-else control structures.
+Provides alternate execution path when the preceding if condition evaluates to false.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.EndApp.html">EndApp</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.Form1.html">Form1</a></dt>
+      <dd><p>Main Windows Form application hosting the BOOSE interpreter with integrated editor and canvas preview.
+Provides a text editor for BOOSE programs and displays graphical output in real-time.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.IfApp.html">IfApp</a></dt>
+      <dd><p>Handles the &quot;if&quot; command for conditional execution in BOOSE programs.
+Evaluates a boolean condition and executes commands only when the condition is true.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.IntApp.html">IntApp</a></dt>
+      <dd><p>Handles the &quot;int&quot; command to create integer variables in BOOSE programs.
+Variables can be initialized with literal values, expressions, or default to 0.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.IntValueParser.html">IntValueParser</a></dt>
+      <dd><p>Static utility class for parsing integer values from strings, variables, or expressions.
+Provides unified parsing that checks BOOSE Program variables, CustomVariables, and evaluates expressions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.MoveToApp.html">MoveToApp</a></dt>
+      <dd><p>Command that moves the canvas drawing cursor to a specified (x, y) coordinate without drawing.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.PenApp.html">PenApp</a></dt>
+      <dd><p>Class that sets the pen color using RGB values.
+Supports integer numbers, variables, and expressions for color components.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.Program.html">Program</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.RealApp.html">RealApp</a></dt>
+      <dd><p>Handles the &quot;real&quot; command to create floating-point variables in BOOSE programs.
+Stores real variables in a custom <a class="xref" href="BOOSEapp.VariableManager.html">VariableManager</a> to bypass BOOSE library type restrictions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.RealValueParser.html">RealValueParser</a></dt>
+      <dd><p>Parses real (floating-point) values from numbers, variable names, or expressions.
+Checks both BOOSE Program variables and CustomVariables storage.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.RectApp.html">RectApp</a></dt>
+      <dd><p>Handles the &quot;rect&quot; command to draw an unfilled rectangle at the current canvas position.
+Supports literal values, variables, and expressions for width and height parameters.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.VarCommand.html">VarCommand</a></dt>
+      <dd><p>Handles variable assignment statements with numeric values and arithmetic expressions.
+Automatically creates new variables or updates existing ones in the StoredProgram.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.VariableManager.html">VariableManager</a></dt>
+      <dd><p>Manages custom variables for types not natively supported by the BOOSE library.
+Provides storage for real (floating-point) variables, arrays, and other extended types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.WhileApp.html">WhileApp</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEapp.WriteApp.html">WriteApp</a></dt>
+      <dd><p>Handles the &quot;write&quot; command to render text on the canvas at the current pen position.
+Supports literal strings, variables, expressions, and string concatenation.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
